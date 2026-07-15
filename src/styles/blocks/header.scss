@@ -1,8 +1,9 @@
 .header {
   background-color: aquamarine;
-  background-image: url('../../images/images-nothing/header-background.jpg');
+  background-image: url('../images/images-nothing/header-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
