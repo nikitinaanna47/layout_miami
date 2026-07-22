@@ -42,49 +42,53 @@
       </h1>
     </header>
     <main class="main">
-      <h2 class="title title--secondary">
-        Recommended
-      </h2>
-      <article class="person">
-        <img class="person__photo"
-          src="./src/images/images-nothing/person1.png" alt="Phone">
-        <h4 class="person__name">Phone (1)</h4>
-        <p class="person__description">
-          Designed with instinct, to <br>
-          bring joy back to the <br>
-          everyday. Through the Glyph <br>
-          Interface, a perfected OS <br>
-          and exceptional dual camera. <br>
-          All startlingly fast.
-        </p>
-        <p class="person__price">$ 499.00</p>
-      </article>
+      <section class="recommended">
+        <h2 class="title title--secondary">
+          Recommended
+        </h2>
+        <div class="recommended__list">
+          <article class="person">
+            <img class="person__photo"
+              src="./src/images/images-nothing/person1.png" alt="Phone">
+            <h3 class="person__name">Phone (1)</h3>
+            <p class="person__description">
+              Designed with instinct, to <br>
+              bring joy back to the <br>
+              everyday. Through the Glyph <br>
+              Interface, a perfected OS <br>
+              and exceptional dual camera. <br>
+              All startlingly fast.
+            </p>
+            <p class="person__price">$ 499.00</p>
+          </article>
 
-      <article class="person">
-        <img class="person__photo"
-          src="./src/images/images-nothing/person2.png" alt="Ear">
-        <h4 class="person__name">Ear (2)</h4>
-        <p class="person__description">
-          Perfecting the path from <br>
-          artist to ear. So that music <br>
-          sounds just as it was <br>
-          intended.
-        </p>
-        <p class="person__price">$ 149.00</p>
-      </article>
+          <article class="person">
+            <img class="person__photo"
+              src="./src/images/images-nothing/person2.png" alt="Ear">
+            <h3 class="person__name">Ear (2)</h3>
+            <p class="person__description">
+              Perfecting the path from <br>
+              artist to ear. So that music <br>
+              sounds just as it was <br>
+              intended.
+            </p>
+            <p class="person__price">$ 149.00</p>
+          </article>
 
-      <article class="person">
-        <img class="person__photo"
-          src="./src/images/images-nothing/person3.png" alt="Ear">
-        <h4 class="person__name">Ear (stick)</h4>
-        <p class="person__description">
-          Tech you can’t feel. Leaving <br>
-          just space for sound to come <br>
-          to life. Powered by custom <br>
-          sound technology.
-        </p>
-        <p class="person__price">$ 119.00</p>
-      </article>
+          <article class="person">
+            <img class="person__photo"
+              src="./src/images/images-nothing/person3.png" alt="Ear">
+            <h3 class="person__name">Ear (stick)</h3>
+            <p class="person__description">
+              Tech you can’t feel. Leaving <br>
+              just space for sound to come <br>
+              to life. Powered by custom <br>
+              sound technology.
+            </p>
+            <p class="person__price">$ 119.00</p>
+          </article>
+        </div>
+      </section>
 
       <section class="section">
         <h3 class="title title--section">Browse Nothing products by category</h3>
@@ -117,8 +121,66 @@
             <p class="article__paragraph">Accessories</p>
           </div>
         </article>
-
         <a href="#" class="button">View all</a>
+      </section>
+
+      <footer class="footer">
+        <img class="footer__footers"
+         src="./src/images/images-nothing/footer-background.jpg" alt="Footer">
+      </footer>
+
+      <section class="section">
+        <h3 class="title title--section">About us</h3>
+        <p class="main__paragraph">
+          We’re a London-based tech company on a mission to remove barriers between people and technology.
+        </p>
+        <p class="main__paragraph">
+          To do this, we’re crafting intuitive, flawlessly connected products that improve our lives without getting in the way.<br>
+          No confusing tech-speak. No silly product names. Just artistry, passion and trust. And products we’re proud to share with our friends and family. Simple.
+        </p>
+        <p class="main__paragraph">
+          Because beautiful tech shouldn’t be complicated.
+        </p>
+      </section>
+
+      <section class="section">
+        <h3 class="title title--section">Contact us</h3>
+        <form class="form">
+          <div class="form__item">
+            <label for="name" class="form__label">Name</label>
+            <input id="name" class="form__input"
+             type="text" placeholder="Name">
+          </div>
+
+          <div class="form__item">
+            <label for="email" class="form__label">Email</label>
+            <input id="email" class="form__input"
+             type="text" placeholder="Email">
+          </div>
+
+          <div class="form__item">
+            <label for="message" class="form__label">Message</label>
+            <textarea
+              id="message"
+              class="form__textarea"
+              placeholder="Message"></textarea>
+          </div>
+
+          <button class="contact-us__button" type="submit">Send</button>
+        </form>
+
+        <address class="address">
+          <h4 class="address__label">Phone</h4>
+          <p class="address__content">+1 234 5555-55-55</p>
+          <h4 class="address__label">Email</h4>
+          <p class="address__content">hello@nothing.com</p>
+          <h4 class="address__label">Address</h4>
+          <p class="address__content">
+            400 first ave.<br>
+            suite 700<br>
+            Minneapolis, MN 55401
+          </p>
+        </address>
       </section>
     </main>
   </body>

@@ -1,0 +1,12 @@
+.footer {
+  margin-inline: -20px;
+  padding-top: 96px;
+
+  &__footers {
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}

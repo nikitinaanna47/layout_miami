@@ -1,3 +1,14 @@
 .main {
   padding: 64px 20px;
+
+  &__paragraph {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0;
+    color: $color;
+    margin-top: 24px;
+  }
 }
