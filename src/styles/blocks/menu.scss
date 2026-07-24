@@ -1,0 +1,37 @@
+.menu {
+  background-color: $menu-color;
+  padding: 0 20px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__links {
+    margin-bottom: 48px;
+  }
+
+  &__paragraph {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $color;
+    margin-bottom: 16px;
+  }
+
+  &__call-link {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $color;
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $color;
+  }
+}
