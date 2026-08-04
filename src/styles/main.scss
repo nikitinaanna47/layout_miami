@@ -1,3 +1,4 @@
+@import './utils/mixins';
 @import './utils/reset';
 @import './utils/variables';
 @import './blocks/header';
@@ -11,7 +12,10 @@
 @import './blocks/footer';
 @import './blocks/recommended';
 @import './blocks/form';
-@import './blocks/contact-us__button';
+@import './blocks/form__button';
 @import './blocks/address';
 @import './blocks/menu';
 @import './blocks/links';
+@import './blocks/contact-us';
+@import './blocks/burger';
+@import './blocks/phone';

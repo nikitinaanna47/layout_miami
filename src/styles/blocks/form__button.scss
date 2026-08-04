@@ -1,4 +1,4 @@
-.contact-us__button {
+.form__button {
   width: 100%;
   height: 56px;
   padding: 0 48px;
@@ -15,10 +15,11 @@
   color: $color;
 
   cursor: pointer;
+
+  &:hover {
+    background-color: $color;
+    color: $background;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  }
 }
 
-.contact-us__button:hover {
-  background-color: $color;
-  color: $background;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
-}

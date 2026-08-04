@@ -1,3 +1,5 @@
+@use '../utils/mixins.scss' as *;
+
 .footer {
   margin-inline: -20px;
   padding-top: 96px;
@@ -8,5 +10,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @include for-desktop {
+      height: 460px;
+    }
+  }
+
+  @include for-desktop {
+    margin-inline: -120px;
   }
 }

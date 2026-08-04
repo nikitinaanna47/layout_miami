@@ -1,13 +1,4 @@
-@mixin visually-hiden() {
-  border: 0;
-  clip-path: inset(50%);
-  height: 1px;
-  margin: 0;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
+@use '../utils/mixins.scss' as *;
 
 .form {
   display: flex;
@@ -28,7 +19,7 @@
     &::placeholder {
       font-family: "Space Mono", monospace;
       font-weight: 400;
-      font-style: regular;
+      font-style: normal;
       font-size: 14px;
       line-height: 140%;
       letter-spacing: 0;

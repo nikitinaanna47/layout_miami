@@ -1,3 +1,5 @@
+@use '../utils/mixins.scss' as *;
+
 .pictures {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -5,8 +7,38 @@
   margin-top: 48px;
 
   &__item {
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 1 / 1;
   }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  @include for-desktop {
+    grid-template-columns: 2fr 1fr;
+
+     &__item {
+      &--big {
+        aspect-ratio: 672 / 324;
+      }
+
+      &--small {
+        aspect-ratio: 1 / 1;
+      }
+    }
+
+    &__image {
+      height: 100%;
+    }
+
+    &:has(.pictures__item--small:first-child) {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+
 }
