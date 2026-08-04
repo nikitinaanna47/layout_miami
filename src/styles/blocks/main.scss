@@ -47,5 +47,9 @@
     letter-spacing: 0;
     color: $color;
     margin-top: 24px;
+
+    @include for-desktop {
+      margin-top: 56px;
+    }
   }
 }
