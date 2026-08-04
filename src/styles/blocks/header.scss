@@ -47,6 +47,7 @@
 
     @include for-desktop {
       grid-column: 1 / 13;
+      max-width: 498px;
     }
   }
 }
