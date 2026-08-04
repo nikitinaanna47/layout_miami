@@ -1,3 +1,5 @@
+@use '../utils/mixins.scss' as *;
+
 .links {
   padding-top: 32px;
 
@@ -16,5 +18,14 @@
     display: flex;
     align-items: center;
     text-decoration: none;
+
+    &--products {
+      @include for-desktop {
+        display: inline-block;
+        cursor: default;
+        border-bottom: 1px solid $color;
+        padding-bottom: 4px;
+      }
+    }
   }
 }
