@@ -1,3 +1,5 @@
+@use '../utils/mixins.scss' as *;
+
 .article {
   &__paragraph {
     font-family: "Space Grotesk", sans-serif;
@@ -7,5 +9,9 @@
     line-height: 140%;
     letter-spacing: 0;
     margin-top: 16px;
+
+    @include for-desktop {
+      font-size: 24px;
+    }
   }
 }
