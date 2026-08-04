@@ -47,7 +47,8 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     color: $color;
-    margin-bottom: 16px;
+
+    grid-column: span 2;
 
     @include for-desktop {
       grid-column: span 12;
