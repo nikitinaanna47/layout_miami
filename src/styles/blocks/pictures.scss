@@ -20,7 +20,7 @@
   }
 
   @include for-desktop {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns:  minmax(0, 2fr) minmax(0, 1fr);
 
      &__item {
       &--big {
@@ -32,13 +32,8 @@
       }
     }
 
-    &__image {
-      height: 100%;
-    }
-
     &:has(.pictures__item--small:first-child) {
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns:  minmax(0, 1fr) minmax(0, 2fr);
     }
   }
-
 }
