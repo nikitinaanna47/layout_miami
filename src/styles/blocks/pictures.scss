@@ -8,7 +8,9 @@
 
   &__item {
     width: 100%;
+    min-width: 0;
     aspect-ratio: 1 / 1;
+    overflow: hidden;
   }
 
   &__image {
@@ -24,11 +26,11 @@
 
      &__item {
       &--big {
-        aspect-ratio: 672 / 324;
+        height: 324px;
       }
 
       &--small {
-        aspect-ratio: 1 / 1;
+        height: 324px;
       }
     }
 
